@@ -561,6 +561,22 @@ section {
   background: var(--bg);
 }
 
+/* Foto de fundo do talent */
+.talent-photo {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  transition: transform 0.6s ease;
+  display: block;
+}
+
+.talent-card:hover .talent-photo {
+  transform: scale(1.06);
+}
+
 .talent-card::after {
   content: '';
   position: absolute;
