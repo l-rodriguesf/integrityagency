@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Integrity Agency S.A. — Representamos os maiores criadores de conteúdo digital do Brasil com integridade, estratégia e excelência." />
+  <meta name="keywords" content="agência influenciadores, streamers, marketing digital, gaming, esports, Brasil" />
+  <meta name="author" content="Integrity Agency S.A." />
+
+  <!-- Open Graph -->
+  <meta property="og:title"       content="Integrity Agency S.A." />
+  <meta property="og:description" content="Representamos os maiores criadores de conteúdo digital do Brasil." />
+  <meta property="og:type"        content="website" />
+  <meta property="og:image"       content="images/logo2.png" />
+
+  <title>INTEGRITY AGENCY S.A. — Influenciadores & Streamers</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="images/logo2.png" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Cinzel:wght@400;600;700;900&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ── CUSTOM CURSOR ──────────────────────────────────── -->
+  <div class="cursor" id="cursor" aria-hidden="true"></div>
+  <div class="cursor-ring" id="cursorRing" aria-hidden="true"></div>
+
+  <!-- ── MOBILE MENU ────────────────────────────────────── -->
+  <div class="mobile-menu" id="mobileMenu" role="dialog" aria-label="Menu de navegação">
+    <a href="#servicos">Serviços</a>
+    <a href="#talentos">Talentos</a>
+    <a href="#processo">Processo</a>
+    <a href="#marcas">Parceiros</a>
+    <a href="#contato">Contato</a>
+  </div>
+
+  <!-- ══════════════════════════════════════════════════════
+       NAVIGATION
+  ══════════════════════════════════════════════════════ -->
+  <header>
+    <nav class="navbar" role="navigation" aria-label="Navegação principal">
+
+      <a href="#" class="nav-logo" aria-label="Integrity Agency S.A. — Página inicial">
+        <img src="images/logo2.png" alt="Integrity Agency S.A." height="56" />
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#talentos">Talentos</a></li>
+        <li><a href="#processo">Processo</a></li>
+        <li><a href="#marcas">Parceiros</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+
+      <button class="nav-cta" onclick="document.getElementById('contato').scrollIntoView({behavior:'smooth'})">
+        Falar Conosco
+      </button>
+
+      <button class="nav-hamburger" id="navHamburger" aria-label="Abrir menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ════════════════════════════════════════════════════
+         HERO
+    ════════════════════════════════════════════════════ -->
+    <section class="hero" id="inicio">
+      <div class="hero-bg-glow" aria-hidden="true"></div>
+
+      <div class="hero-logo-wrap">
+        <img src="images/logo2.png"
+             alt="Integrity Agency S.A. — Logo"
+             width="340"
+             height="400" />
+      </div>
+
+      <p class="hero-description">
+        Representamos os maiores criadores de conteúdo digital do Brasil
+        com integridade, estratégia e excelência incomparável.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#talentos" class="btn-gold">Conhecer o Roster</a>
+        <a href="#servicos" class="btn-outline-gold">Nossos Serviços</a>
+      </div>
+
+      <div class="hero-stats" aria-label="Estatísticas">
+        <div class="hero-stat">
+          <div class="hero-stat-num"
+               data-count="280"
+               data-suffix="+">280+</div>
+          <div class="hero-stat-label">Talentos</div>
+        </div>
+        <div class="hero-stat">
+          <div class="hero-stat-num"
+               data-count="1.4"
+               data-suffix="B">1.4B</div>
+          <div class="hero-stat-label">Alcance Total</div>
+        </div>
+        <div class="hero-stat">
+          <div class="hero-stat-num"
+               data-count="420"
+               data-suffix="+">420+</div>
+          <div class="hero-stat-label">Campanhas</div>
+        </div>
+        <div class="hero-stat">
+          <div class="hero-stat-num"
+               data-count="98"
+               data-suffix="%">98%</div>
+          <div class="hero-stat-label">Satisfação</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── MARQUEE ─────────────────────────────────────── -->
+    <div class="marquee-wrap" aria-hidden="true">
+      <div class="marquee-track">
+        <span>GAMING</span><span class="dot">◆</span>
+        <span>LIFESTYLE</span><span class="dot">◆</span>
+        <span>ENTRETENIMENTO</span><span class="dot">◆</span>
+        <span>ESPORTS</span><span class="dot">◆</span>
+        <span>MÚSICA</span><span class="dot">◆</span>
+        <span>MODA</span><span class="dot">◆</span>
+        <span>GASTRONOMIA</span><span class="dot">◆</span>
+        <span>TECNOLOGIA</span><span class="dot">◆</span>
+        <!-- duplicate for seamless loop -->
+        <span>GAMING</span><span class="dot">◆</span>
+        <span>LIFESTYLE</span><span class="dot">◆</span>
+        <span>ENTRETENIMENTO</span><span class="dot">◆</span>
+        <span>ESPORTS</span><span class="dot">◆</span>
+        <span>MÚSICA</span><span class="dot">◆</span>
+        <span>MODA</span><span class="dot">◆</span>
+        <span>GASTRONOMIA</span><span class="dot">◆</span>
+        <span>TECNOLOGIA</span><span class="dot">◆</span>
+      </div>
+    </div>
+
+    <!-- ════════════════════════════════════════════════════
+         SERVICES
+    ════════════════════════════════════════════════════ -->
+    <section id="servicos">
+      <div class="section-header reveal">
+        <div class="section-eyebrow">Serviços</div>
+        <h2 class="section-title">NOSSA ATUAÇÃO</h2>
+        <p class="section-subtitle">Gestão completa, do talento ao resultado</p>
+      </div>
+
+      <div class="services-grid reveal">
+
+        <article class="service-card">
+          <div class="service-roman">I</div>
+          <h3>Gestão de Streamers</h3>
+          <p>Gerenciamento completo de carreira para streamers na Twitch, YouTube Live e Kick. Contratos, crescimento de canal e monetização estratégica.</p>
+        </article>
+
+        <article class="service-card">
+          <div class="service-roman">II</div>
+          <h3>Campanhas de Influência</h3>
+          <p>Conectamos marcas a criadores alinhados com seus valores. Estratégia, execução e métricas reais de performance em cada ativação.</p>
+        </article>
+
+        <article class="service-card">
+          <div class="service-roman">III</div>
+          <h3>Estratégia de Conteúdo</h3>
+          <p>Roteiros, calendários e diretrizes criativas que maximizam engajamento e constroem audiências fiéis e duradouras em todas as plataformas.</p>
+        </article>
+
+        <article class="service-card">
+          <div class="service-roman">IV</div>
+          <h3>Monetização</h3>
+          <p>Desbloqueamos múltiplos fluxos de receita — patrocínios, merch, produtos digitais, exclusivos e eventos ao vivo com retorno real.</p>
+        </article>
+
+        <article class="service-card">
+          <div class="service-roman">V</div>
+          <h3>Análise & Dados</h3>
+          <p>Dashboard exclusivo com métricas em tempo real. Decisões baseadas em dados, com ROI transparente para marcas e criadores.</p>
+        </article>
+
+        <article class="service-card">
+          <div class="service-roman">VI</div>
+          <h3>Produção & Eventos</h3>
+          <p>Meetups, torneios, lives especiais e ativações físicas. Levamos o impacto digital para o mundo real com produção de alto nível.</p>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ── NUMBERS ──────────────────────────────────────── -->
+    <div class="numbers-wrap">
+      <div class="numbers-inner reveal" aria-label="Números da agência">
+
+        <div class="num-block">
+          <div class="num-val" data-count="280" data-suffix="+">280+</div>
+          <div class="num-label">Criadores Ativos</div>
+        </div>
+
+        <div class="num-block">
+          <div class="num-val" data-count="1.4" data-suffix="B">1.4B</div>
+          <div class="num-label">Alcance Combinado</div>
+        </div>
+
+        <div class="num-block">
+          <div class="num-val" data-count="48" data-suffix="M">R$48M</div>
+          <div class="num-label">Receitas Geradas</div>
+        </div>
+
+        <div class="num-block">
+          <div class="num-val" data-count="98" data-suffix="%">98%</div>
+          <div class="num-label">Satisfação de Marcas</div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ════════════════════════════════════════════════════
+         TALENT
+    ════════════════════════════════════════════════════ -->
+    <section class="talent-section" id="talentos">
+      <div class="section-header reveal">
+        <div class="section-eyebrow">Talentos</div>
+        <h2 class="section-title">NOSSO ROSTER</h2>
+        <p class="section-subtitle">Criadores de conteúdo de elite sob nossa gestão</p>
+      </div>
+
+      <div class="talent-grid reveal">
+
+        <article class="talent-card">
+          <div class="talent-visual" aria-hidden="true">🎮</div>
+          <div class="talent-gradient"></div>
+          <div class="talent-info">
+            <span class="talent-platform-badge">Twitch</span>
+            <div class="talent-name">KaioFPS</div>
+            <div class="talent-niche">FPS · Battle Royale</div>
+            <div class="talent-reach">3.2M seguidores</div>
+            <div class="talent-line" aria-hidden="true"></div>
+          </div>
+        </article>
+
+        <article class="talent-card">
+          <div class="talent-visual" aria-hidden="true">✨</div>
+          <div class="talent-gradient"></div>
+          <div class="talent-info">
+            <span class="talent-platform-badge">Instagram</span>
+            <div class="talent-name">Layssa Vibe</div>
+            <div class="talent-niche">Lifestyle · Moda</div>
+            <div class="talent-reach">8.7M seguidores</div>
+            <div class="talent-line" aria-hidden="true"></div>
+          </div>
+        </article>
+
+        <article class="talent-card">
+          <div class="talent-visual" aria-hidden="true">🎵</div>
+          <div class="talent-gradient"></div>
+          <div class="talent-info">
+            <span class="talent-platform-badge">TikTok</span>
+            <div class="talent-name">DuoGabz</div>
+            <div class="talent-niche">Música · Entretenimento</div>
+            <div class="talent-reach">12.1M seguidores</div>
+            <div class="talent-line" aria-hidden="true"></div>
+          </div>
+        </article>
+
+        <article class="talent-card">
+          <div class="talent-visual" aria-hidden="true">🏆</div>
+          <div class="talent-gradient"></div>
+          <div class="talent-info">
+            <span class="talent-platform-badge">YouTube</span>
+            <div class="talent-name">ProMindset</div>
+            <div class="talent-niche">Esports · Coaching</div>
+            <div class="talent-reach">5.4M inscritos</div>
+            <div class="talent-line" aria-hidden="true"></div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════════════════════════
+         PROCESS
+    ════════════════════════════════════════════════════ -->
+    <section class="process-section" id="processo">
+      <div class="section-header reveal">
+        <div class="section-eyebrow">Processo</div>
+        <h2 class="section-title">COMO TRABALHAMOS</h2>
+        <p class="section-subtitle">Método exclusivo desenvolvido para resultados excepcionais</p>
+      </div>
+
+      <div class="process-steps reveal">
+
+        <div class="proc-step">
+          <div class="proc-num">I</div>
+          <h4>Discovery</h4>
+          <p>Mapeamos o perfil, objetivos e potencial do criador ou da marca em profundidade.</p>
+        </div>
+
+        <div class="proc-step">
+          <div class="proc-num">II</div>
+          <h4>Match</h4>
+          <p>Algoritmo exclusivo para cruzar dados e encontrar o parceiro verdadeiramente ideal.</p>
+        </div>
+
+        <div class="proc-step">
+          <div class="proc-num">III</div>
+          <h4>Estratégia</h4>
+          <p>Plano personalizado com metas claras, mensuráveis e alinhadas ao negócio.</p>
+        </div>
+
+        <div class="proc-step">
+          <div class="proc-num">IV</div>
+          <h4>Execução</h4>
+          <p>Time dedicado acompanha cada etapa da campanha com atenção total ao detalhe.</p>
+        </div>
+
+        <div class="proc-step">
+          <div class="proc-num">V</div>
+          <h4>Resultado</h4>
+          <p>Relatórios completos e iteração contínua para escalar o sucesso de forma consistente.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════════════════════════
+         BRANDS
+    ════════════════════════════════════════════════════ -->
+    <section class="brands-section" id="marcas">
+      <div class="section-header reveal">
+        <div class="section-eyebrow">Parceiros</div>
+        <h2 class="section-title">MARCAS PARCEIRAS</h2>
+        <p class="section-subtitle">Empresas que confiam na Integrity Agency</p>
+      </div>
+
+      <div class="brands-grid reveal" aria-label="Marcas parceiras">
+        <div class="brand-cell">REDBULL</div>
+        <div class="brand-cell">RAZER</div>
+        <div class="brand-cell">NUBANK</div>
+        <div class="brand-cell">SAMSUNG</div>
+        <div class="brand-cell">RIOT</div>
+        <div class="brand-cell">IFOOD</div>
+        <div class="brand-cell">LOGITECH</div>
+        <div class="brand-cell">NETFLIX</div>
+        <div class="brand-cell">NIKE</div>
+        <div class="brand-cell">CORSAIR</div>
+        <div class="brand-cell">BMOBILE</div>
+        <div class="brand-cell">STEAM</div>
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════════════════════════
+         CTA
+    ════════════════════════════════════════════════════ -->
+    <section class="cta-section" id="contato">
+      <div class="cta-bg-logo" aria-hidden="true">IA</div>
+
+      <div class="ornament-divider" style="margin-bottom: 48px;">
+        <div class="diamond" aria-hidden="true"></div>
+      </div>
+
+      <h2>
+        ELEVE SEU NÍVEL.
+        <span>TRABALHE COM A INTEGRITY.</span>
+      </h2>
+
+      <p>
+        Seja você um criador buscando o próximo patamar ou uma marca que exige
+        excelência — estamos prontos para transformar potencial em legado.
+      </p>
+
+      <a href="mailto:contato@integrityagency.com.br" class="btn-gold">
+        Iniciar Conversa
+      </a>
+
+      <div class="ornament-divider" style="margin-top: 48px;">
+        <div class="diamond" aria-hidden="true"></div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ════════════════════════════════════════════════════════
+       FOOTER
+  ════════════════════════════════════════════════════════ -->
+  <footer>
+    <div class="footer-top">
+
+      <div class="footer-brand">
+        <div class="footer-logo-wrap">
+          <img src="images/logo2.png"
+               alt="Integrity Agency S.A."
+               width="160"
+               height="192" />
+        </div>
+        <p>Representamos os melhores criadores de conteúdo digital com ética, estratégia e excelência desde o primeiro dia.</p>
+      </div>
+
+      <div class="footer-cols">
+
+        <div class="footer-col">
+          <h5>Agência</h5>
+          <ul>
+            <li><a href="#">Sobre Nós</a></li>
+            <li><a href="#">Nossa Equipe</a></li>
+            <li><a href="#">Carreiras</a></li>
+            <li><a href="#">Imprensa</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Serviços</h5>
+          <ul>
+            <li><a href="#servicos">Para Criadores</a></li>
+            <li><a href="#servicos">Para Marcas</a></li>
+            <li><a href="#servicos">Eventos</a></li>
+            <li><a href="#servicos">Consultoria</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Contato</h5>
+          <ul>
+            <li><a href="mailto:contato@integrityagency.com.br">contato@integrityagency.com.br</a></li>
+            <li><a href="tel:+551199999999">+55 (11) 9999-9999</a></li>
+            <li><a href="#">São Paulo, SP</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 INTEGRITY AGENCY S.A. — TODOS OS DIREITOS RESERVADOS</p>
+      <nav class="social-links" aria-label="Redes sociais">
+        <a href="#" aria-label="Instagram">Instagram</a>
+        <a href="#" aria-label="TikTok">TikTok</a>
+        <a href="#" aria-label="LinkedIn">LinkedIn</a>
+        <a href="#" aria-label="Twitch">Twitch</a>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- ── SCRIPTS ─────────────────────────────────────────── -->
+  <script src="js/main.js" defer></script>
+
+</body>
+</html>
