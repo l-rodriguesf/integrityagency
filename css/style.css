@@ -33,7 +33,16 @@ body {
   color: var(--white);
   font-family: 'Montserrat', sans-serif;
   overflow-x: hidden;
-  cursor: none;
+}
+
+@media (hover: hover) {
+  body { cursor: none; }
+  .btn-gold,
+  .btn-outline-gold,
+  .nav-cta,
+  .nav-hamburger,
+  .brand-cell,
+  .talent-card { cursor: none; }
 }
 
 /* Fabric texture overlay */
@@ -152,7 +161,6 @@ body::before {
   letter-spacing: 3px;
   text-transform: uppercase;
   padding: 12px 28px;
-  cursor: none;
   transition: background var(--transition), border-color var(--transition), color var(--transition);
 }
 
@@ -169,7 +177,6 @@ body::before {
   gap: 5px;
   background: none;
   border: none;
-  cursor: none;
   padding: 4px;
 }
 
@@ -286,7 +293,6 @@ body::before {
   text-transform: uppercase;
   padding: 16px 40px;
   border: none;
-  cursor: none;
   text-decoration: none;
   display: inline-block;
   transition: opacity var(--transition), transform var(--transition), box-shadow var(--transition);
@@ -515,7 +521,6 @@ section {
   position: relative;
   aspect-ratio: 2/3;
   background: var(--bg);
-  cursor: none;
 }
 
 .talent-card::after {
@@ -704,7 +709,6 @@ section {
   letter-spacing: 3px;
   color: var(--gray);
   transition: color var(--transition), background var(--transition);
-  cursor: none;
 }
 
 .brand-cell:hover {

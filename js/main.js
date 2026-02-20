@@ -8,6 +8,14 @@ document.addEventListener('DOMContentLoaded', () => {
   const cursor = document.getElementById('cursor');
   const ring   = document.getElementById('cursorRing');
 
+  // Não inicializa cursor em touch devices
+  const isTouch = window.matchMedia('(hover: none)').matches;
+  if (isTouch) {
+    cursor.style.display = 'none';
+    ring.style.display   = 'none';
+    document.body.style.cursor = 'auto';
+  } else {
+
   let mx = 0, my = 0, rx = 0, ry = 0;
 
   document.addEventListener('mousemove', (e) => {
@@ -50,6 +58,8 @@ document.addEventListener('DOMContentLoaded', () => {
     cursor.style.opacity = '1';
     ring.style.opacity   = '0.6';
   });
+
+  } // end !isTouch
 
 
   // ── NAVBAR SCROLL BEHAVIOR ────────────────────────────────
